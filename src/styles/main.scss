@@ -3,6 +3,7 @@
 @use 'shows';
 @use 'plans';
 @use 'available-devices';
+@use 'faq';
 
 @font-face {
     font-family: Avenir;
@@ -25,10 +26,6 @@
 
 body {
     background-color: variaveis.$corDeFundo;
-}
-
-li {
-    list-style: none;
 }
 
 @mixin text($fontSize: 16px) {
@@ -70,6 +67,10 @@ li {
 
 .title--small {
     @include title(28px)
+}
+
+.list-style-none {
+    list-style: none;
 }
 
 .button {
